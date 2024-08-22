@@ -1,0 +1,25 @@
+server:
+  Port: 8080
+  servlet:
+    context-path: /xxw-example
+Spring:
+  Application:
+    name: xxw-example
+  datasource:
+    type: org.h2.jdbcx.JdbcConnectionPool
+    driver-class-name: org.h2.Driver
+  # Redis服务器连接端口
+  data:
+    redis:
+      database: 0
+      host: 1.13.196.8
+      port: 6379
+      password: yhkj@2021redis#
+      timeout: 2000
+      jedis:
+        pool:
+          max-active: 8
+          min-idle: 5
+          max-wait: -1
+          max-idle: 8
+          time-between-eviction-runs: 10000
