@@ -23,7 +23,7 @@ public class IdleUserRightsService {
     public IdleUserRightsCardHistoryDTO buildHistory(IdleUserRightsCardDTO card) {
         IdleUserRightsCardHistoryDTO idleUserRightsCardHistoryDTO = new IdleUserRightsCardHistoryDTO();
         idleUserRightsCardHistoryDTO.setPaidCntLeft("1");
-        idleUserRightsCardHistoryDTO.setCount("2");
+        idleUserRightsCardHistoryDTO.setCount("1");
         idleUserRightsCardHistoryDTO.setId(1L);
         log.info("IdleUserRightsService buildHistory:{}", JSON.toJSONString(idleUserRightsCardHistoryDTO));
         return idleUserRightsCardHistoryDTO;
